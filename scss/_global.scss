@@ -54,12 +54,17 @@ p.lead {
   font-size: 1.5rem;
 }
 
+p a {
+  text-decoration: underline;
+}
+
 .social-icons {
+  display: flex;
+  justify-content: center;
   a {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $gray-700;
     color: $white !important;
     border-radius: 100%;
     text-align: center;
@@ -73,6 +78,15 @@ p.lead {
       background-color: $primary;
     }
   }
+  .linkedin-container {
+    background: #0e72b0;
+  }
+  .github-container {
+    background: $black;
+  }
+  .mail-container {
+    background: $red;
+  }
 }
 
 .dev-icons {
@@ -81,5 +95,50 @@ p.lead {
     &:hover {
       color: $primary;
     }
+  }
+}
+
+.resume-item {
+  display: inline-block;
+}
+
+.resume-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+  height: auto;
+}
+
+.resume-content{
+  .fab {
+    margin: 0 0.125rem;
+  }
+  .fa-bootstrap {
+    color: #563d7b;
+  }
+  .fa-sass {
+    color: #CF639A;
+  }
+  .fa-js-square {
+    color: #FBDE33;
+  }
+  .fa-vuejs {
+    color: #41B883;
+  }
+  .fa-python {
+    color: #346D9C;
+  }
+  .fa-css3-alt {
+    color: #1076BC
+  }
+  .fa-ubuntu {
+    color: #E95421;
+  }
+  .detail {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
   }
 }

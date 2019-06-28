@@ -59,11 +59,23 @@ p.lead {
   font-size: 1.5rem;
 }
 
+p a {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -80,12 +92,75 @@ p.lead {
   background-color: #1B4C2D;
 }
 
+.social-icons .linkedin-container {
+  background: #0e72b0;
+}
+
+.social-icons .github-container {
+  background: #000;
+}
+
+.social-icons .mail-container {
+  background: #dc3545;
+}
+
 .dev-icons {
   font-size: 3rem;
 }
 
 .dev-icons .list-inline-item i:hover {
   color: #1B4C2D;
+}
+
+.resume-item {
+  display: inline-block;
+}
+
+.resume-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+  height: auto;
+}
+
+.resume-content .fab {
+  margin: 0 0.125rem;
+}
+
+.resume-content .fa-bootstrap {
+  color: #563d7b;
+}
+
+.resume-content .fa-sass {
+  color: #CF639A;
+}
+
+.resume-content .fa-js-square {
+  color: #FBDE33;
+}
+
+.resume-content .fa-vuejs {
+  color: #41B883;
+}
+
+.resume-content .fa-python {
+  color: #346D9C;
+}
+
+.resume-content .fa-css3-alt {
+  color: #1076BC;
+}
+
+.resume-content .fa-ubuntu {
+  color: #E95421;
+}
+
+.resume-content .detail {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
