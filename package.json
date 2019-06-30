@@ -1,48 +1,48 @@
 {
-    "title": "Berto Moore Resume",
-    "name": "berto-moore-resume",
-    "version": "0.1",
-    "scripts": {
-        "start": "node_modules/.bin/gulp watch"
-    },
-    "description": "Static website built using a resume template by David Miller on startbootstrap.com.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://bertomoore.dev",
-    "license": "MIT",
-    "author": "Berto Moore",
-    "contributors": [
-        "Berto Moore",
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "5.9.0",
-        "bootstrap": "4.3.1",
-        "gatsby": "^2.10.4",
-        "jquery": "3.4.1",
-        "react": "^16.8.6"
-    },
-    "devDependencies": {
-        "browser-sync": "2.26.7",
-        "del": "4.1.1",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "6.1.0",
-        "gulp-clean-css": "4.2.0",
-        "gulp-header": "2.0.7",
-        "gulp-plumber": "^1.2.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
-    }
+  "title": "Berto Moore Resume",
+  "name": "berto-moore-resume",
+  "description": "Static website built using gatsby and a resume template on startbootstrap.com.",
+  "version": "0.1.0",
+  "homepage": "https://bertomoore.dev",
+  "license": "MIT",
+  "author": "Berto Moore",
+  "contributors": [
+    "Berto Moore",
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "node_modules/.bin/gulp watch",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "gatsby": "^2.10.4",
+    "gatsby-plugin-typography": "^2.3.0",
+    "glob": "^7.1.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.7",
+    "del": "4.1.1",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "6.1.0",
+    "gulp-clean-css": "4.2.0",
+    "gulp-header": "2.0.7",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-uglify": "3.0.2",
+    "merge-stream": "2.0.0",
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bertomoore/dev.git"
+  }
 }
