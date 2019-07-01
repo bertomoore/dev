@@ -59,7 +59,7 @@ class Icon extends React.PureComponent {
     render() {
         return (
             <i 
-                class={this.iconClass}
+                className={this.iconClass}
                 aria-label={this.props.name}
             ></i>
         )

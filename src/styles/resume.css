@@ -1,18 +1,11 @@
-/*!
- * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */
-
-@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700');
-@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i');
-
+@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
   background: #e9ecef;
   color: #343a40;
@@ -24,14 +17,13 @@ body {
     padding-left: 17rem;
   }
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -46,8 +38,16 @@ h2 {
   font-size: 3.5rem;
 }
 
+#home h2 {
+  display: none;
+}
+
 h3 {
   font-size: 2rem;
+}
+
+h3 a {
+  text-decoration: underline;
 }
 
 p.lead {
@@ -58,7 +58,7 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
 }
 
@@ -70,15 +70,32 @@ p a {
   text-decoration: underline;
 }
 
-.social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
+section#home {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  align-items: center;
+}
+section#home .w-100.w-100 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+section {
+  min-height: 100vh;
+}
+
+p.lead.mb-5:first-of-type::first-letter {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
@@ -90,23 +107,18 @@ p a {
   line-height: 3.5rem;
   margin-right: 1rem;
 }
-
 .social-icons a:last-child {
   margin-right: 0;
 }
-
 .social-icons a:hover {
   background-color: #1B4C2D;
 }
-
 .social-icons .linkedin-container {
   background: #0e72b0;
 }
-
 .social-icons .github-container {
   background: #000;
 }
-
 .social-icons .mail-container {
   background: #dc3545;
 }
@@ -114,91 +126,46 @@ p a {
 .dev-icons {
   font-size: 3rem;
 }
-
 .dev-icons .list-inline-item i:hover {
   color: #1B4C2D;
 }
 
-.resume-item {
-  display: inline-block;
+.date-range {
+  font-size: 1.375rem;
 }
 
-.resume-content {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: .5rem;
-  -webkit-box-shadow: 0 0 2px #000;
-  box-shadow: 0 0 2px #000;
-  height: auto;
+.education-content p {
+  margin: 0;
 }
 
-.resume-content .fab {
-  margin: 0 0.125rem;
+#sideNav #navbarSupportedContent {
+  transition: height 2s linear;
 }
-
-.resume-content .fa-bootstrap {
-  color: #563d7b;
-}
-
-.resume-content .fa-sass {
-  color: #CF639A;
-}
-
-.resume-content .fa-js-square {
-  color: #FBDE33;
-}
-
-.resume-content .fa-vuejs {
-  color: #41B883;
-}
-
-.resume-content .fa-python {
-  color: #346D9C;
-}
-
-.resume-content .fa-css3-alt {
-  color: #1076BC;
-}
-
-.resume-content .fa-ubuntu {
-  color: #E95421;
-}
-
-.resume-content .detail {
-  padding-left: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
 #sideNav .navbar-toggler:focus {
   outline-color: #2f844e;
 }
 
 @media (min-width: 992px) {
+  #navbarSupportedContent {
+    transition: none;
+  }
+
   #sideNav {
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 17rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
@@ -209,22 +176,13 @@ p a {
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
   }
   #sideNav .navbar-collapse .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
   }
@@ -235,33 +193,107 @@ p a {
     display: block;
   }
 }
+/*
 
+
+@keyframes
+  from {
+    height: 0; 
+  }
+
+  to {
+    height: auto;
+  }
+}
+
+
+*/
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
-
+section.resume-section .resume-item {
+  display: inline-block;
+}
+section.resume-section .resume-item .resume-content {
+  height: auto;
+}
+section.resume-section .resume-item .resume-content .fab {
+  margin: 0 0.125rem;
+}
+section.resume-section .resume-item .resume-content .fa-bootstrap {
+  color: #563d7b;
+}
+section.resume-section .resume-item .resume-content .fa-sass {
+  color: #CF639A;
+}
+section.resume-section .resume-item .resume-content .fa-js-square {
+  color: #FBDE33;
+}
+section.resume-section .resume-item .resume-content .fa-vuejs {
+  color: #41B883;
+}
+section.resume-section .resume-item .resume-content .fa-python {
+  color: #346D9C;
+}
+section.resume-section .resume-item .resume-content .fa-css3-alt {
+  color: #1076BC;
+}
+section.resume-section .resume-item .resume-content .fa-ubuntu {
+  color: #E95421;
+}
+section.resume-section .resume-item .resume-content .fa-gulp {
+  color: #cf4647;
+}
+section.resume-section .resume-item .resume-content .fa-react {
+  background: #000000;
+  color: #61dafb;
+  border-radius: 4px;
+}
+section.resume-section .resume-item .resume-content .detail {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+.card {
+  background: #fffdfc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
+
 @media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
-
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  section.resume-section .resume-content p {
+    min-height: 15rem !important;
   }
 }
-
+@media (min-width: 1140px) {
+  section.resume-section .resume-content p {
+    min-height: 12.5rem !important;
+  }
+}
+@media (min-width: 1280px) {
+  section.resume-section .resume-content p {
+    min-height: 9rem !important;
+  }
+}
 .bg-primary {
   background-color: #1B4C2D !important;
 }
@@ -273,7 +305,8 @@ section.resume-section .resume-item .resume-date {
 a {
   color: #1B4C2D;
 }
-
 a:hover, a:focus, a:active {
   color: #07140c;
 }
+
+/*# sourceMappingURL=resume.css.map */

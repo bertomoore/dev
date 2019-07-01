@@ -37,8 +37,16 @@ h2 {
   font-size: 3.5rem;
 }
 
+#home h2 {
+  display: none;
+}
+
 h3 {
   font-size: 2rem;
+}
+
+h3 a {
+  text-decoration: underline;
 }
 
 p.lead {
@@ -59,6 +67,28 @@ p.lead {
 
 p a {
   text-decoration: underline;
+}
+
+section#home {
+  display: flex;
+  align-items: center;
+  .w-100.w-100 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+section {
+  min-height: 100vh;
+}
+
+p.lead.mb-5:first-of-type::first-letter {
+  @include heading-font;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 2rem;
 }
 
 .social-icons {
@@ -101,55 +131,10 @@ p a {
   }
 }
 
-.resume-item {
-  display: inline-block;
+.date-range {
+  font-size: 1.375rem;
 }
 
-.resume-content {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: .5rem;
-  -webkit-box-shadow: 0 0 2px #000;
-  box-shadow: 0 0 2px #000;
-  height: auto;
-}
-
-.resume-content{
-  .fab {
-    margin: 0 0.125rem;
-  }
-  .fa-bootstrap {
-    color: #563d7b;
-  }
-  .fa-sass {
-    color: #CF639A;
-  }
-  .fa-js-square {
-    color: #FBDE33;
-  }
-  .fa-vuejs {
-    color: #41B883;
-  }
-  .fa-python {
-    color: #346D9C;
-  }
-  .fa-css3-alt {
-    color: #1076BC
-  }
-  .fa-ubuntu {
-    color: #E95421;
-  }
-  .fa-gulp {
-    color: #cf4647;
-  }
-  .fa-react {
-    background: #000000;
-    color: #61dafb;
-    border-radius: 4px;
-  }
-  .detail {
-    padding-left: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 100;
-  }
+.education-content p {
+  margin: 0;
 }

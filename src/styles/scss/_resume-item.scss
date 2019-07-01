@@ -3,15 +3,62 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
   .resume-item {
-    .resume-content {}
+    display: inline-block;
+    .resume-content {
+      height: auto;
+
+      .fab {
+        margin: 0 0.125rem;
+      }
+      .fa-bootstrap {
+        color: #563d7b;
+      }
+      .fa-sass {
+        color: #CF639A;
+      }
+      .fa-js-square {
+        color: #FBDE33;
+      }
+      .fa-vuejs {
+        color: #41B883;
+      }
+      .fa-python {
+        color: #346D9C;
+      }
+      .fa-css3-alt {
+        color: #1076BC
+      }
+      .fa-ubuntu {
+        color: #E95421;
+      }
+      .fa-gulp {
+        color: #cf4647;
+      }
+      .fa-react {
+        background: #000000;
+        color: #61dafb;
+        border-radius: 4px;
+      }
+      .detail {
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 100;
+      }
+    }
     .resume-date {
       min-width: none;
     }
   }
 }
+.card {
+  background: #fffdfc;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
     .resume-item {
       .resume-date {
         min-width: 18rem;
@@ -21,7 +68,26 @@ section.resume-section {
 }
 @media (min-width: 992px) {
   section.resume-section {
+    .resume-content p {
+      min-height: 15rem !important;
+    }
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+    margin: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
+}
+@media (min-width: 1140px) {
+  section.resume-section {
+    .resume-content p {
+      min-height: 12.5rem !important;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  section.resume-section {
+    .resume-content p {
+      min-height: 9rem !important;
+    }
   }
 }

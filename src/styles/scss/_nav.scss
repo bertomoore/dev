@@ -1,4 +1,7 @@
 #sideNav {
+  #navbarSupportedContent {
+    transition: height 2s linear;
+  }
   .navbar-nav .nav-item .nav-link {
     font-weight: 800;
     letter-spacing: 0.05rem;
@@ -12,6 +15,9 @@
 }
 
 @media (min-width: 992px) {
+  #navbarSupportedContent {
+    transition: none;
+  }
   #sideNav {
     text-align: center;
     position: fixed;
@@ -55,3 +61,20 @@
     }
   }
 }
+
+
+/*
+
+
+@keyframes
+  from {
+    height: 0; 
+  }
+
+  to {
+    height: auto;
+  }
+}
+
+
+*/

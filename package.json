@@ -21,6 +21,7 @@
   "dependencies": {
     "gatsby": "^2.10.4",
     "gatsby-cli": "^2.7.7",
+    "gatsby-plugin-sass": "^2.1.0",
     "gatsby-plugin-typography": "^2.3.0",
     "glob": "^7.1.4",
     "react": "^16.8.6",
@@ -31,15 +32,6 @@
   "devDependencies": {
     "browser-sync": "2.26.7",
     "del": "4.1.1",
-    "gulp": "4.0.2",
-    "gulp-autoprefixer": "6.1.0",
-    "gulp-clean-css": "4.2.0",
-    "gulp-header": "2.0.7",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "1.4.0",
-    "gulp-sass": "4.0.2",
-    "gulp-uglify": "3.0.2",
-    "merge-stream": "2.0.0",
     "prettier": "^1.18.2"
   },
   "repository": {
