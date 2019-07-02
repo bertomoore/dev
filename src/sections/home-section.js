@@ -7,22 +7,22 @@ class HomeSection extends React.PureComponent {
     return (
       <Section header='Home'
         content={(
-          <div className="w-100">
-            <h1 className="mb-1 text-center">
+          <div className="w-100 text-center">
+            <h1 className="text-center">
               <span className="text-primary">Berto Moore</span>
             </h1>
-            <div className="subheading mb-5">
-              Developer. Designer. Communicator.
-            </div>
-            <div className="social-icons">
-              <a className="linkedin-container" href="https://linkedin.com/in/bertomoore">
-                <Icon name="linkedin" />
+            <div className="subheading mt-1">Software Developer.</div>
+            <div className="subheading">Web Designer.</div>
+            <div className="subheading mb-4">Communicator.</div>
+            <div className="mt-2 social-icons">
+              <a className="mail-container" href="mailto:hello@bertomoore.dev">
+                <Icon name="email" />
               </a>
               <a className="github-container" href="https://github.com/bertomoore">
                 <Icon name="github" />
               </a>
-              <a className="mail-container" href="mailto:hello@bertomoore.dev">
-                <Icon name="email" />
+              <a className="linkedin-container" href="https://linkedin.com/in/bertomoore">
+                <Icon name="linkedin" />
               </a>
             </div>
           </div>

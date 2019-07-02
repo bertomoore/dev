@@ -15,11 +15,13 @@ class ResumeCard extends React.PureComponent {
       <div className="resume-item mb-5 my-lg-3 col-12 col-lg-6">
         <div className="resume-content card">
           <h3 className="mb-0">{this.header}</h3>
-          <div className="subheading">{this.icons}</div>
           <hr />
+          <div className="subheading">{this.icons}</div>
           <p>{this.props.description}</p>
           <hr />
-          <em>Copyright &copy; {this.props.copyright}</em>
+          <em>Copyright &copy; {this.props.copyright}
+          {this.props.source && <span>&nbsp;<a href={this.props.source}>(src)</a></span>}
+          </em>
         </div>
       </div>
     )

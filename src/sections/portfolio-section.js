@@ -7,7 +7,7 @@ class PortfolioSection extends React.PureComponent {
         return (
           <PageSection header='Portfolio'
             content={(
-              <div className="w-100">
+              <div className="w-100 pt-1">
 
 
                 <ResumeCard 
@@ -22,9 +22,9 @@ class PortfolioSection extends React.PureComponent {
                     gradually integrated to a Gatsby/React environment.`
                   }
 
-                  copyright='Berto Moore MIT' 
+                  copyright='Berto Moore MIT&nbsp;License' 
 
-                  source='github.com/bertomoore'
+                  source='https://github.com/bertomoore/dev'
 
                 />
 
@@ -65,7 +65,7 @@ class PortfolioSection extends React.PureComponent {
                     Developed with no CSS/JS frameworks. Illustrative only; does not have full functionality.`
                   } 
 
-                  copyright='Berto Moore MIT'
+                  copyright='Berto Moore MIT&nbsp;License'
 
                   source="https://github.com/bertomoore/bertomoore.github.io"
 
@@ -86,7 +86,7 @@ class PortfolioSection extends React.PureComponent {
                     Designed to be compatible will all major browsers including Internet Explorer 9`
                   }
 
-                  copyright='Berto Moore MIT'
+                  copyright='Berto Moore MIT&nbsp;License'
 
                   source='https://github.com/sarajenkinsart/sarajenkinsart.github.io'
                   

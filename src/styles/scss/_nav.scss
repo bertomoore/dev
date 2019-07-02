@@ -1,6 +1,18 @@
 #sideNav {
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  .navbar-brand {
+    @include title-font;
+  }
   #navbarSupportedContent {
-    transition: height 2s linear;
+    transition: 1s;
+
+  }
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
   }
   .navbar-nav .nav-item .nav-link {
     font-weight: 800;
@@ -19,6 +31,7 @@
     transition: none;
   }
   #sideNav {
+    border-bottom: none;
     text-align: center;
     position: fixed;
     top: 0;
@@ -61,20 +74,3 @@
     }
   }
 }
-
-
-/*
-
-
-@keyframes
-  from {
-    height: 0; 
-  }
-
-  to {
-    height: auto;
-  }
-}
-
-
-*/

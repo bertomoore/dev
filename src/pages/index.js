@@ -5,28 +5,27 @@ import AboutSection from "../sections/about-section";
 import PortfolioSection from "../sections/portfolio-section";
 import EducationSection from "../sections/education-section";
 
+const links = [
+    "Portfolio",
+    "Education",
+    "About"
+]
+
 class PageView extends React.PureComponent {
     
     render() {
         return (
             <div>
 
-                <NavBar navLinks={
-                    [
-                        "Home",
-                        "About",
-                        "Portfolio",
-                        "Education"
-                    ]} 
-                />
+                <NavBar navLinks={links} />
 
                 <HomeSection />
-
-                <AboutSection />
                 
                 <PortfolioSection />
 
                 <EducationSection />
+
+                <AboutSection />
 
             </div>
         )
