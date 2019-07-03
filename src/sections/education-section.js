@@ -6,8 +6,8 @@ class EducationSection extends React.PureComponent {
     return (
       <Section header="Education"
         content={(
-          <div className="pt-3">
-            <div className="education-card p-4 m-3 card">
+          <div>
+            <div className="education-card education-card p-4 mx-3 mb-3 card">
               <hr />
               <div className="education-content">
                 <div>
@@ -15,14 +15,14 @@ class EducationSection extends React.PureComponent {
                   <span className="text-primary date-range">Fall 2018 - Present</span>
                 </div>
                 <div className="subheading">Bachelor of Science</div>
-                <div>Management Information Systems</div>
-                <div>Concentration in Software Engineering</div>
+                <div className="font-italic">Management Information Systems</div>
+                <div className="font-italic">Concentration in Software Engineering</div>
                 <p><strong>GPA: 4.00</strong></p>
                 <hr />
               </div>
 
             </div>
-            <div className="education-card p-4 m-3 card">
+            <div className="education-card p-4 m-3 mt-5 card">
               <hr />
               <div className="education-content">
                 <h3 className="mb-0">Previously Used Resources</h3>
