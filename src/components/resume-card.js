@@ -12,16 +12,16 @@ class ResumeCard extends React.PureComponent {
 
   render() {
     return (
-      <div className="resume-item mb-5 my-lg-3 col-12 col-lg-6">
+      <div className="resume-item mb-5 col-12">
         <div className="resume-content card">
+          <hr />
           <h3 className="mb-0">{this.header}</h3>
-          <hr />
-          <div className="subheading">{this.icons}</div>
+          <span className="subheading">{this.icons}</span>
           <p>{this.props.description}</p>
+          <strong>Copyright &copy; {this.props.copyright}
+            {this.props.source && <span>&nbsp;<a href={this.props.source}>(src)</a></span>}
+          </strong>
           <hr />
-          <em>Copyright &copy; {this.props.copyright}
-          {this.props.source && <span>&nbsp;<a href={this.props.source}>(src)</a></span>}
-          </em>
         </div>
       </div>
     )

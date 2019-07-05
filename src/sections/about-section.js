@@ -19,7 +19,7 @@ class AboutSection extends React.PureComponent {
                 </p>
                 <p className="lead mb-3 p-2">
                   If you'd like to get a quote on a project or learn more, 
-                  please send a message to <a href="mailto:bertomoorecode@gmail.com">bertomoorecode@gmail.com</a>.
+                  please send a message to <a href="mailto:berto@bertomoore.dev">berto@bertomoore.dev</a>.
                 </p>
                 <p className="lead mb-3 p-2">
                   Thank you!

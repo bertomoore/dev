@@ -294,19 +294,6 @@ section.resume-section .resume-item .resume-date {
     margin: auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
-  section.resume-section .resume-content p {
-    min-height: 15rem !important;
-  }
-}
-@media (min-width: 1140px) {
-  section.resume-section .resume-content p {
-    min-height: 12.5rem !important;
-  }
-}
-@media (min-width: 1280px) {
-  section.resume-section .resume-content p {
-    min-height: 9rem !important;
-  }
 }
 .bg-primary {
   background-color: #1B4C2D !important;

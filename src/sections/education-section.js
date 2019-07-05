@@ -27,9 +27,9 @@ class EducationSection extends React.PureComponent {
               <div className="education-content">
                 <h3 className="mb-0">Previously Used Resources</h3>
                 <div className="subheading">Languages</div>
-                <p>Python, JavaScript, Go, Lua, BASH, R, Java, C++, PHP, MATLAB</p>
+                <p class="font-italic">Python, JavaScript, Go, Lua, BASH, R, Java, C++, PHP, MATLAB</p>
                 <div className="subheading mt-3">Frameworks/tools</div>
-                <p>Django, React, Vue, Wordpress, Bootstrap, SASS, Gulp, Nodemon, RStudio</p>
+                <p class="font-italic">Django, React, Vue, Wordpress, Bootstrap, SASS, Gulp, Nodemon, RStudio</p>
               </div>
               <hr />
             </div>
